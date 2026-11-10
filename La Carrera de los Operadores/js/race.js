@@ -94,8 +94,8 @@
       let x = C.FIRST_ASTEROID;
       while (x < 30000) {
         const p = U.clamp(x / 14000, 0, 1);
-        const pBig = 0.08 + 0.22 * p;
-        const pMid = 0.32 + 0.1 * p;
+        const pBig = 0;
+        const pMid = 0;
         const r = this.rng();
         const size = sched.length === 0 ? 1 : r < pBig ? 3 : r < pBig + pMid ? 2 : 1;
         sched.push({ x, size });
